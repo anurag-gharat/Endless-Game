@@ -4,7 +4,7 @@ import Box from './Box'
 export default class Grid extends Component {
     render() {
         console.log(this.props);
-        const width = (this.props.cols*16)+1;
+        const width = this.props.cols*14;
         var rowsArr =[]
         var boxClass="";
         for(var i =0; i<this.props.rows; i++){
