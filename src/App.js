@@ -20,13 +20,18 @@ class App extends React.Component{
 
 
   }
+
+  selectBox=()=>{
+    
+  }
+
   render(){
     return(
       <div className="App">
         <h1>The Game Of Life</h1>
         {/* All the components will come here */}
         <Grid
-        girdFull={this.state.gridFull}
+        gridFull={this.state.gridFull}
         rows={this.rows}
         cols={this.cols}
         selectBox={this.selectBox}
